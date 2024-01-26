@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <side-bar></side-bar>
+    <!-- 他のコンテンツやコンポーネントがここに追加される -->
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// SideBar.vue コンポーネントをインポートします
+import SideBar from './components/SideBar.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // SideBar コンポーネントを登録します
+    'side-bar': SideBar
   }
-}
+  // App コンポーネントのデータやメソッドもここに追加できます。
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* ここにグローバルなスタイルを追加できます */
 </style>
